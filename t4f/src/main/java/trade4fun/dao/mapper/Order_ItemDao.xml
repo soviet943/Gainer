@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="trade4fun.dao.Order_ItemDao">
+	<resultMap type="trade4fun.pojo.Order_Item" id="BaseResultMap">
+		<result column="orderid" property="orderid"/>
+		<result column="itemid" property="itemid"/>
+	</resultMap>
+	<insert id="insert" parameterType="java.lang.Integer">
+    	insert into order_item (orderid, itemid) values (#{orderid}, #{itemid})
+  	</insert>
+  	<select id="selectByOrder" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    	select itemid from order_item where orderid = #{orderid}
+  	</select>
+  	<delete id="delete">
+  		delete from order_item where orderid = #{orderid}
+  	</delete>
+</mapper>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="trade4fun.dao.ReplyDao">
+	<resultMap id="articlemap" type="trade4fun.pojo.bbs.Reply">
+		<result column="stat" property="stat" />
+		<result column="aid" property="aid" />
+		<result column="rid" property="rid" />
+		<result column="cid" property="cid" />
+		<result column="uid" property="uid" />
+		<result column="username" property="username" />
+		<result column="voted" property="voted" />
+		<result column="content" property="content" />
+		<result column="ctime" property="ctime" />
+	</resultMap>
+
+	<select id="selectByRid" resultMap="articlemap">
+		select * from reply where rid = #{rid} order by ctime DESC
+	</select>
+	<select id="selectByAid" resultMap="articlemap">
+		select * from reply where aid = #{aid} order by ctime DESC 
+	</select>
+	<select id="selectByCid" resultMap="articlemap">
+		select * from reply where cid = #{cid} order by ctime DESC limit #{startPos}, #{size}
+	</select>
+	<select id="selectByUid" resultMap="articlemap">	
+		select * from reply where uid = #{uid} order by ctime DESC
+	</select>
+	
+	<insert id="insert" useGeneratedKeys="true" keyProperty="rid" parameterType="trade4fun.pojo.bbs.Reply">
+	    insert into reply (
+		    aid, cid, uid, username, content
+	    ) 
+	    values (
+	    	#{aid}, #{cid}, #{uid}, #{username}, #{content}
+    	)
+	</insert>
+	
+	<delete id="deleteByAId">
+		delete from reply where aid = #{aid}
+	</delete>
+	<delete id="deleteByCId">
+		delete from reply where cid = #{cid}
+	</delete>
+	<delete id="deleteByRId">
+		delete from reply where rid = #{rid}
+	</delete>
+	<delete id="deleteByUId">
+		delete from reply where uid = #{uid}
+	</delete>
+	
+	<update id="update_voted" parameterType="java.util.Map">
+		<foreach collection="votes" index="rid" item="voted">
+			update article
+       		<set>
+	            `voted` = #{voted}
+       		</set>
+        	<where>
+        		rid=#{rid}
+        	</where>
+      	</foreach>
+	</update>
+	
+	
+	
+</mapper>

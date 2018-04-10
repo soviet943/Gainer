@@ -1,0 +1,197 @@
+body {
+	font: 13px/1.5 'Helvetica Neue', 'Lucida Grande', Microsoft YaHei, Arial,
+		'Liberation Sans', sans-serif;
+	color: #afb0b2;
+	word-wrap: break-word;/* 如果单词太长，这一行容纳不下了，则换行 */
+	background-color: #2F3840;
+	background: url("../images/pic/ti1mg.jpg") center -150px no-repeat;
+	margin: 0;
+}
+a:hover {
+    color: #e4b35a;
+}
+
+.head {
+	margin-left: 220px;
+	background: #2F3840;
+	height: 35px;
+	font-size: 12px;
+	padding-right: 10px;
+	box-shadow:0px 0px 10px 2px #e4b35a inset;
+	opacity: 0.7;
+}
+.head .state0 {
+	float: left;
+}
+.head .state0 .form-search input {
+	width: 200px;
+	border: 1px solid #e4b35a;
+	height: 34px;
+	background: none;
+}
+.head .state1 {
+	float: right;
+	font-size: 15px;
+}
+
+.Menu {
+	position: absolute;
+	top: 0px;
+	background: #313A42;
+	opacity: 0.9;
+	width: 220px;
+	height: 1000px;
+}
+.Menu a {
+	border: 0px;
+	background: #313A42;
+    color: #afb0b2;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "楷体_GB2312 KaiTi_GB2312";
+    letter-spacing:2px;
+}
+.Menu a:hover {
+    background: #394552;
+    color: #e4b35a;
+}
+.Menu .display {
+	height: 150px;
+	padding: 0px;
+	box-shadow:0px 0px 10px 5px #e4b35a inset;
+}
+.Menu .display img {
+	padding-left: 5px;
+	padding-top: 5px;	
+	heigh: 140px;
+	width: 210px;
+	vertical-align: middle;
+}
+
+/* 主体部分 */
+.content {
+	display: none;
+	box-shadow:0px 0px 10px 2px #e4b35a inset;
+	margin-left: 220px;
+	width: 1129px;
+	height: 965px;
+	padding: 0px;
+	font-size: 15px;
+	font-weight: bold;
+}
+input {
+	color: #e4b35a;
+	background: #394552;
+	padding: 0px;
+	border-radius:4px;
+	border-left: 0px;
+	border:1px solid #e4b35a;
+	text-align: center;
+}
+.m-right {
+	display: none;
+}
+.m-right table tr td {
+	border: none;
+}
+#right_1 .table tr {
+	height: 45px;
+}
+label {
+	padding-left: 15px;
+}
+#csgo_add_display button {
+	color: #e4b35a;
+	padding-left: 30px;
+	background-color: #394552;
+}
+td button {
+	border: #afb0b2 1px solid;
+	border-radius: 2px;
+	background-color: #394552;
+}
+.modal button {
+	color: #e4b35a;
+	background-color: #394552;
+}
+.toggle .list-group-item {
+	height: 32px;
+	font-size: 15px;
+	padding: 0px;
+	padding-left: 10px;
+}
+#addmsg {
+	color: #e4b35a;
+	font-size: 18px;
+	font-family: fantasy;
+}
+.modal-dialog {
+	width: 1100px;
+	background: #394552;
+	opacity: 0.8;
+	box-shadow:0px 0px 10px 2px #e4b35a;
+	border-radius: 15px;
+}
+.modal-body table tr {
+	font-weight: 600;
+	font-size: 14px;
+	height: 40px;
+}
+select {
+	color: #e4b35a;
+	background: #394552	
+}
+.divsetcenter {
+    text-align: center;
+}
+.yema li {
+    display: inline;
+}
+.pagination li a{
+	background: #394552;
+	color: #e4b35a;
+}
+.pagination {
+	margin-top: 0px;
+}
+#csgo_select_display {
+	font-size: 13px;
+}
+.type {
+	height: 23px;
+	padding-left: 5px;
+	position: absolute;
+	left: 450px;
+	top: 7px;
+	background: none;
+	width: 120px;
+}
+.isdrop {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	left: 450px;
+	top: 32px;
+	width: 120px;
+	padding: 0;
+	opacity: 1;
+}
+.isdrop li {
+	padding-left: 5px;	
+	padding-top: 7px;
+	height: 32px;
+	list-style: none;
+	background: #394552;
+}
+#iteminfo >tr:nth-child(odd) {
+	background: #1B1F2A;
+}
+#iteminfo >tr:nth-child(even) {
+	background: #2C3040;
+}
+#iteminfo >tr:hover {
+	color: #e4b35a;
+}
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="trade4fun.dao.CommentDao">
+	<resultMap id="commentmap" type="trade4fun.pojo.bbs.Comment">
+		<result column="stat" property="stat" />
+		<result column="aid" property="aid" />
+		<result column="cid" property="cid" />
+		<result column="uid" property="uid" />
+		<result column="username" property="username" />
+		<result column="voted" property="voted" />
+		<result column="content" property="content" />
+		<result column="ctime" property="ctime" />
+		<result column="haschild" property="haschild" />
+	</resultMap>
+
+	<select id="selectByCid" resultMap="commentmap">
+		select * from comment where cid = #{cid} order by ctime DESC
+	</select>
+	<select id="selectByAid" resultMap="commentmap">
+		select * from comment where aid = #{aid} order by ctime DESC limit #{startPos}, #{size}
+	</select>
+	<select id="selectByUid" resultMap="commentmap">	
+		select * from comment where uid = #{uid} order by ctime DESC
+	</select>
+	
+	<insert id="insert" useGeneratedKeys="true" keyProperty="cid" parameterType="trade4fun.pojo.bbs.Comment">
+	    insert into comment (
+		    aid, uid, username, content
+	    ) 
+	    values (
+	    	#{aid}, #{uid}, #{username}, #{content}
+    	)
+	</insert>
+	
+	<delete id="deleteByAId">
+		delete from comment where aid = #{aid}
+	</delete>
+	<delete id="deleteByCId">
+		delete from comment where cid = #{cid}
+	</delete>
+	<delete id="deleteByUId">
+		delete from comment where uid = #{uid}
+	</delete>
+	
+	<update id="update_voted" parameterType="java.util.Map">
+		<foreach collection="votes" index="cid" item="voted">
+			update comment
+       		<set>
+	            `voted` = #{voted}
+       		</set>
+        	<where>
+        		cid=#{cid}
+        	</where>
+      	</foreach>
+	</update>
+	<update id="reply_num">
+		update comment
+		<set>
+			haschild = haschild + 1 where cid = #{cid}
+		</set>
+	</update>
+	
+	
+</mapper>

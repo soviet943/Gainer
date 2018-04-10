@@ -1,0 +1,268 @@
+.w-e-toolbar {
+	opacity: 1 !important;
+	background-color: #272C3B !important;
+	border: 0px !important;
+}
+.w-e-text-container {
+	border: 0px !important;
+	
+}
+.w-e-text {
+	overflow-y: auto !important;
+}
+a {
+	outline:none;
+}
+#editor {
+	z-index: -100;
+	opacity: 1 !important;
+}
+.detail-left {
+	width: 810px;
+	float: left;
+	margin-right: 20px;
+}
+.floor-nav-title {
+    height: 40px;
+    line-height: 40px;
+    color: #e4b35a;
+    padding: 0 20px;
+}
+.floor-nav {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    background: #141821;
+    font-size: 14px;
+}
+.contribute {
+    background: #1B1F2A;
+    padding: 20px;
+}
+p {
+	margin: 0 0 10px;	
+}
+.wiki-floor {
+	background: #1F2431;
+	margin-bottom: 0px !important;
+	padding: 20px !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.mr-10 {
+    margin-right: 10px !important;
+}
+.bottom-2 {
+    position: relative;
+    bottom: 2px;
+}
+.hero-select {
+    width: 117px;
+    height: 28px;
+    margin-right: 3px;
+    background: url("https://static.c5game.com/images/arrow.png") no-repeat scroll right center transparent;
+    padding-left: 10px;
+    border: 1px solid #667485;
+    appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+option {
+    background-color: #141821;
+}
+.mt-10 {
+    margin-top: 10px !important;
+}
+.mt-5 {
+    margin-top: 5px !important;
+}
+#item_name {
+	width: 288px;
+	padding-left: 10px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #667485;
+	background: none;
+}
+.wangEditor-container {
+    position: relative;
+    background-color: #272C3B;
+    border: 1px solid #3F4560;
+    z-index: 1;
+    width: 650px;
+    height: 500px;
+}
+#addPic {
+    display: inline-block;
+    border: 2px solid #3F4560;
+    float: left;
+    width: 80px;
+    height: 50px;
+    line-height: 46px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: #3F4560;
+}
+#preview {
+	width: 200px;
+	height: 120px;
+    overflow: hidden;
+}
+.pd-5 {
+    padding: 5px !important;
+}
+.modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #696f87;
+}
+.modal-dialog {
+    display: table;
+    height: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: auto;
+}
+.modal-content {
+    background-color: #384050;
+    border: 1px solid #696f87;
+    border-radius: 0;
+}
+.cut-container {
+	width: 600px;
+	height: 360px;
+	margin: 20px 30px;
+	border: dashed #cacaca 1px;
+}
+.msg-pic-detail {
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid #3F4560;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+}
+.msg-delete {
+    position: absolute;
+    font-size: 16px;
+    left: 30px;
+    top: 13px;
+    visibility: hidden;
+}
+.msg-pic-detail:hover .msg-delete {
+    visibility: visible;
+}
+.msg-pic-detail:hover {
+    border: 2px solid #FEC053;
+}
+#img_zoom_in .modal-dialog .modal-content {
+	margin-top: 150px;
+}
+.display_zoom_in_img {
+	border: 2px solid white;
+}
+#test_img {
+	height: 247px;
+	width: 408px;
+}
+#zoom-close {
+	position: absolute;
+	font-size: 25px;
+	right: 5px;
+	top: 5px;
+}
+#zoom-close:hover {
+	color: #FEC053;
+}
+.btn-blue {
+	background: #4d567f;
+	color: #fff;
+	padding: 0 20px;
+	height: 30px;
+	line-height: 28px;
+	border-radius: 2px;
+}
+.wiki-article {
+	width: 810px;
+}
+.wiki-title {
+    width: 810px;
+    height: 90px;
+    background: #141821;
+    text-align: center;
+    padding-top: 10px;
+}
+.ft-22 {
+	font-size: 22px;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 559611 */
+  src: url('//at.alicdn.com/t/font_559611_dpoe5ga4pkb21emi.eot');
+  src: url('//at.alicdn.com/t/font_559611_dpoe5ga4pkb21emi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_559611_dpoe5ga4pkb21emi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_559611_dpoe5ga4pkb21emi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_559611_dpoe5ga4pkb21emi.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wiki-body {
+    padding: 20px;
+    background: #1B1F2A;
+}
+#preview_close {
+	position: absolute;
+	font-size: 25px;
+	right: 5px;
+	top: 5px;
+}
+#preview_close:hover {
+	color: #FEC053;
+}
+.w-e-text-container {
+	height: 475px !important;
+}
+
+.detail-right {
+	width: 290px;
+	float: left;
+}
+.user-logined {
+	height: 300px;
+    padding: 20px;
+    padding-top: 10px !important;
+    background: url("https://static.c5game.com/images/bg.png");
+}
+.region-head {
+	height: 140px;
+}
+.img-circle {
+    width: 70px;
+    height: 70px;
+    margin: 50px 90px 0 90px;
+}
+.name-ellipsis-160 {
+    display: inline-block;
+    max-width: 160px;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: -4px;
+    font-size: 16px !important;
+    color: #fff !important;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mt-60 {
+	margin-top: 60px;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="trade4fun.dao.CodeDao">
+	<resultMap id="codemap" type="trade4fun.pojo.Code">
+		<id column="id" property="id" />
+		<result column="item_id" property="item_id" />
+		<result column="game_type" property="game_type" />
+		<result column="user_id" property="user_id" />
+		<result column="code" property="code" />
+		<result column="stat" property="stat" />
+	</resultMap>
+
+	<select id="selectById" parameterType="java.lang.Integer" resultMap="codemap">
+		select * from code where id = #{id}
+	</select>
+
+	<insert id="insert" parameterType="trade4fun.pojo.Code">
+		insert into code
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="item_id != null">
+				item_id,
+			</if>
+			<if test="game_type != null">
+				game_type,
+			</if>
+			<if test="user_id != null">
+				user_id,
+			</if>
+			<if test="code != null">
+				code,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="item_id != null">
+				#{item_id},
+			</if>
+			<if test="game_type != null">
+				#{game_type},
+			</if>
+			<if test="user_id != null">
+				#{user_id},
+			</if>
+			<if test="code != null">
+				#{code},
+			</if>
+		</trim>
+	</insert>
+	
+	<update id="update" parameterType="trade4fun.pojo.Code">
+		update code
+			<set>
+				<if test="stat != null">
+					stat = #{stat},
+				</if>
+			</set>
+		where id = #{id}
+	</update>
+</mapper>

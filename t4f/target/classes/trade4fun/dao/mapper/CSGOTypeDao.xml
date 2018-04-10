@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="trade4fun.dao.CSGOTypeDao">
+	<!-- 主要用来通过键的id获取对应的中文名称 -->
+	<resultMap type="trade4fun.pojo.CSGOItemType" id="AllType">
+		<result property="csgo_subtype_name" column="csgo_subtype_name"/>
+		<result property="csgo_type_name" column="csgo_type_name"/>
+	</resultMap>
+	
+	<select id="getAllTypes" resultMap="AllType">
+        select * from csgo_item_type
+    </select>
+    
+</mapper>	

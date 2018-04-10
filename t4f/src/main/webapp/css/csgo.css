@@ -1,0 +1,527 @@
+.nav_list_csgo {
+	float: left;
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	display: none;
+	width: 500px;
+}
+
+.nav_list_csgo ul.nav-data {
+	border-top: 1px solid #e4b35a;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	overflow: hidden;
+	background: #141821;
+	width: 300px;
+	display: table;
+}
+
+.nav_list_csgo ul.nav-data li {
+	float: left;
+	display: table;
+	width: 150px;
+	height: 50px;
+	padding: 0;
+}
+
+.nav_list_csgo ul.nav-data li:hover {
+	background: url("../images/pic/orange-bg.png");
+}
+.nav_list_csgo ul.nav-data li:hover a {
+	color: white;
+	border-bottom: 0px;
+}
+
+.nav_list_csgo ul.nav-data li a {
+	width: 130px;
+	margin-right:10px;
+	text-decoration: none;
+	color: grey;
+	border-bottom: 1px solid #1A1E29;
+	text-align: center;
+}
+
+.nav-image {
+	display: inline;
+	border-top: 1px solid #e4b35a;
+	padding: 0;
+	float: left;
+	width: 200px;
+	height: 150px;
+	background: #1B1F2A;
+}
+
+.navbar-csgo>li {
+	z-index: 555;
+	list-style: none;
+	float: left;
+	height: 50px;
+}
+.navbar-csgo>li:nth-child(1){
+    width: 80px;
+    background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 4px 5px;
+}
+.navbar-csgo>li:nth-child(2){
+    width: 90px;
+    background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 10px -43px;
+}
+.navbar-csgo>li:nth-child(3){
+    width: 90px;
+    background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 8px -91px;
+}
+.navbar-csgo>li:nth-child(4){
+    width: 120px;
+    background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 4px -140px;
+}
+.navbar-csgo>li:nth-child(5){
+    width: 110px;
+    background-image: url('../images/pic/juji.png');
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+}
+.navbar-csgo>li:nth-child(6){
+	width: 100px;
+    background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position:6px -188px;
+}
+.navbar-csgo>li:nth-child(7){
+	width: 90px;
+    background-image: url('../images/pic/jiqiang.png');
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+}
+.navbar-csgo>li:nth-child(8){
+	width: 90px;
+    background-image: url("../images/pic/gloves.png");
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+}
+.navbar-csgo>li:nth-child(9){
+	width: 85px;
+	background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 2px -234px;
+}
+.navbar-csgo>li:nth-child(10){
+	width: 95px;
+	background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 4px -282px;
+}
+.navbar-csgo>li:nth-child(11){
+	width: 90px;
+	background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+    background-position: 8px -330px;
+}
+.navbar-csgo>li:nth-child(12){
+	width: 80px;
+	background: url("../images/pic/csgo-nav-icon.png") no-repeat;
+   	background-image: url('https://www.c5game.com/images/CSGO/others.png');
+    background-position: 8px 7px;
+}
+
+.navbar-csgo>li:hover {
+	background-color: #606060;
+	z-index: -1;
+}
+
+.nav-image img {
+	border: 0;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.navbar-csgo>li a{
+	float: right;
+	height: 50px;
+	margin-right: 10px;
+	line-height: 50px;
+	color: grey;
+	text-decoration: none;
+}
+/* bar*/
+.navbar-csgo {
+	z-index: 333;
+	margin-bottom: 0px;
+	margin-left: 110px;
+	padding: 0;
+	width: 1120px; 
+	height:50px; 
+	background-color: #141821;
+	list-style: none;
+	/* background: url("https://static.c5game.com/images/CSGO/csgo-nav-bg.png"); */
+} 
+
+.csgo-navbar-fix {
+	z-index: 333;
+	position: fixed;
+	top: 100px;
+	width: 1500px;
+	height: 50px;
+	background-color: #141821;
+}
+
+
+.csgo-container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 170px;
+	margin-right: 7%;
+	margin-left: 7%;
+	height: auto;
+}
+/*
+===================左面筛选部分
+*/
+.search-left {
+    width: 290px;
+    float: left;
+    border-top: 2px solid #1b1f2a;
+}
+
+.filter-cat-group {
+    background: #232836;
+    overflow: hidden;
+    margin-bottom: 1px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.filter-cat-group #csgo_label {
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	color: #e4b35a;
+}
+.filter-cat-group div > a {
+	color: #afb0b2;
+}
+.filter-cat-group div > a:hover {
+    color: #e4b35a;
+    text-decoration: none;
+}
+.filter-cat-parameter {
+    padding: 0 15px 0 5px;
+    background: url('images/pic/close.png') right no-repeat;
+}
+.filter-group {
+    background: #232836;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 1px;
+}
+.filter-group #cago_label {
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	color: #e4b35a;
+}
+.filter-parameter {
+    margin: 2px 5px 2px 0;
+    padding: 2px 5px;
+	color: #afb0b2;
+	display: inline-block;
+}
+.filter-parameter:hover {
+    color: #e4b35a;
+    text-decoration: none;
+}
+/*
+===================右面物品展示部分
+*/
+.search-right {
+	margin-top: 0px !important;
+	margin-left: 20px !important;
+    width: 810px;
+    float: left;
+    background: #141821;
+}
+a {
+	text-decoration: none;
+	color: #afb0b2;
+}
+a:hover{
+	text-decoration: none;
+	color: #e4b35a;
+}
+.search-bar {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #141821;
+    font-size: 14px;
+}
+.search-bar li {
+    height: 38px;
+    line-height: 36px;
+    padding: 0 20px;
+    float: left;
+}
+.sort-price input {
+    background-color: transparent;
+    height: 25px;
+    border: 1px solid #667485;
+    width: 90px;
+    padding-left: 10px;
+    line-height: normal;
+}
+.btn-blue {
+    color: #fff;
+    padding: 0 20px;
+    height: 25px;
+	line-height: 23px;
+    background: #4d567f;
+	position: relative;
+    top: -2px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+.pull-right {
+	float: right;
+}
+.csgo-searchbox {
+	float: right;
+	position: relative;
+	margin-top: 3px;
+}
+.csgo-searchbox input {
+    width: 288px;
+    text-indent: 10px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #667485;
+    background: none;
+}
+.csgo-searchbox #search-submit {
+	font-size: 15px; 
+	color: #667485;
+	position: absolute;
+	right: 6px;
+	top: 8px;
+}
+
+.tab-content {
+	background: #1B1F2A;
+}
+.list-item4 {
+	float: left;
+	display: table;
+	background: #1b1f2a;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.list-item4 .selling {
+	background: #2c3040;
+	color: #939395;
+	float: left;
+	border: 2px solid #2c3040;
+	width: 177px;
+	padding: 3px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.csgo-img-bg {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: url("../images/pic/item-bg.jpg") center 0 no-repeat;
+	background-size: 109%;
+    width: 167px;
+	height: 110px;
+	text-align: center;
+}
+.item-img {
+	height: 110px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.item-img:hover {  
+	transition: all 0.3s; 
+    transform: scale(1.3);  
+} 
+.csgo-img-bg-hot img:hover {
+	transition: all 0.3s; 
+    transform: scale(1.3);  
+}
+.selling .name {
+    margin-top: 10px;
+    height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+	width: 165px;
+	margin: 5px 0;
+}
+.selling .name a {
+	text-decoration: none;
+	color: #afb0b2;
+}
+.info {
+	float: left;
+}
+.info #price {
+    color: #e46409;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+.rarity-box {
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    border-radius: 10px;
+    left: 5px;
+    bottom: 5px;
+    background: #000000;
+    text-align: center;
+}
+
+.sum-filter {
+	display: inline-block;
+	margin: 2px 5px 2px 0;
+	padding: 0px 5px;
+	border: 1px solid #e4b35a;
+	background: url("../images/pic/close.png") 95% 50% no-repeat;
+}
+.white-box {
+	color: #e4b35a;
+	border: 1px solid #B2B2B2;
+}
+/*热卖排行*/
+.floor-nav-title {
+	margin-top: 20px;
+	height: 40px;
+	line-height: 40px;
+	color: #e4b35a;
+	padding: 0 20px;
+	background: #141821;
+	font-size: 14px;
+}
+.side-list {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.side-list li:nth-child(odd) {
+	background: #1b1f2a;
+}
+.side-list li:nth-child(even) {
+	background: #282E3E;
+}
+.side-list li {
+    padding: 15px 20px;
+    border: 1px solid #1b1f2a;
+    float: left;
+    height: 84px;
+    width: 290px;
+    position: relative;
+}
+.csgo-img-bg-hot {
+	background: url("../images/pic/item-bg.jpg") center 0 no-repeat;
+	background-size: 109%;
+	border: 1px solid #cf6a32;
+	width: 70px;
+	height: 50px;
+	overflow: hidden;
+	margin-right: 10px;
+	float: left;
+	position: relative;
+}
+.csgo-img-bg-hot img {
+	vertical-align: middle;
+	width: 70px;
+	height: 50px;
+}
+.rarity-box-hot {
+	position: absolute;
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	line-height: 16px;
+	height: 16px;
+	text-align: center;
+}
+/*稀有度颜色*/
+.rarity-mythical {/* 受限 */
+	color: #8847ff;
+}
+.rarity-ancient {/* 隐秘 */
+	color: #afb0b2;
+}
+.rarity-common {/* 普通级 */
+	color: #b0c3d9;
+}
+.rarity-rare {/* 军舰级 */
+	color: #4b69ff;
+}
+.rarity-uncommon {/* 工业级 */
+	color: #5e98d9;
+}
+.rarity-legendary {/* 保密 */
+	color: #d32ce6;
+}
+.rarity-contraband {/* 违禁 */
+	color: #afb0b2;
+}
+.rarity-immortal {/* 保密 */
+	color: #e4ae39;
+}
+.info-hot {
+	float: left;
+	line-height: 15px;
+	width: 160px;
+	overflow: hidden;
+}
+.info-hot p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0 10px;
+	margin-bottom: 10px;
+}
+.info-hot .name-hot {
+	color: #cf6a32;
+}
+.sold-hot {
+	color: #e4b35a;
+}
+/*分页部分*/
+.divsetcenter {
+    text-align: center;
+}
+.yema li {
+    display: inline;
+}
+.pagination >li >a {
+	color: #797a7e;
+	background-color: #2c3040;
+	border: 1px solid #2c3040;
+	margin-left: 1px;
+	padding: 13px 17px;
+}
+.pagination {
+	margin-top: 0px;
+}
+.active {
+	border-top: 2px solid #e4b35a;
+	background: #1b1f2a;
+	color: #e4b35a;
+}
+
+
+
+

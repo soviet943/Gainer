@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://www.mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="trade4fun.dao.TokenDao">
+	<resultMap id="tokenmap" type="trade4fun.pojo.Token">
+		<result column="user_id" property="user_id" />
+		<result column="token" property="token" />
+		<result column="ip" property="ip" />
+		<result column="create_time" property="create_time" />
+		<result column="expired_time" property="expired_time" />
+		<result column="stat" property="stat" />
+	</resultMap>
+
+<insert id="insert" parameterType="trade4fun.pojo.Token">
+	insert into token
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="user_id != null">
+			user_id,
+		</if>
+      	<if test="token != null">
+        	token,
+      	</if>
+		<if test="expired_time != null">
+			expired_time,
+		</if>
+		<if test="ip != null">
+			ip,
+		</if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+		<if test="user_id != null">
+			#{user_id},
+		</if>
+		<if test="token != null">
+			#{token},
+		</if>
+		<if test="expired_time != null">
+			#{expired_time},
+		</if>
+		<if test="ip != null">
+			#{ip},
+		</if>
+    </trim>
+</insert>
+
+<select id="selectByToken" parameterType="java.lang.String" resultMap="tokenmap">
+	select * from token where token = #{token}
+</select>
+<select id="selectByTokenAndStat" resultMap="tokenmap">
+	select * from token where token = #{token} and stat = #{stat}
+</select>
+<select id="selectByUid" parameterType="java.lang.Integer" resultMap="tokenmap">
+	select * from token where user_id = #{user_id}
+</select>
+
+<update id="updateStatByDate">
+	update token set stat = #{stat} where expired_time &lt; #{date}
+</update>
+<update id="updateStatByToken">
+	update token set stat = #{stat} where token = #{token}
+</update>
+
+</mapper>
